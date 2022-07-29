@@ -31,3 +31,25 @@ INFO :  SELECT ID,USER,HOST,DB,COMMAND,TIME,STATE,INFO FROM information_schema.p
 --------------------------------------------------------------------------------------------------------------------
 Latency:  1.782614ms
 ```
+
+The latency is the time it takes to execute the query.
+
+What inspired me to create this tool and it's still a work in progress. The way you can use BASH and the mysql client to test the latency.
+
+```BASH
+date +"%T" && mysql -vv -h 10.x.x.x -e "SELECT 1" mysql && date +"%T"
+11:27:09
+--------------
+SELECT 1
+--------------
+
++---+
+| 1 |
++---+
+| 1 |
++---+
+1 row in set (0.00 sec)
+
+Bye
+11:27:09
+```
