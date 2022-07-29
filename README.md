@@ -7,11 +7,11 @@ Just a simple latency test for Go against a remote Database.
 It's a simple test to measure the latency of a remote database. I wanted it to be simple and easy to use and to be able to put the queries in a file verses hardcoding them in the code.
 
 
-```BASH
+```GO
 go get github.com/go-latency/latency
 ```
 
-```BASH
+```GO
 go-latency -h                       
   -e string
         endpoint to test latency to and from
@@ -53,3 +53,5 @@ SELECT 1
 Bye
 11:27:09
 ```
+
+### Thank you! [Github Copilot](https://copilot.github.com/)
